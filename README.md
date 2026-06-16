@@ -1,3 +1,4 @@
+
 # noip-renewer
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/simao-silva/noip-renewer?style=for-the-badge)
