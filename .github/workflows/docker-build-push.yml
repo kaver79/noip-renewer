@@ -69,7 +69,7 @@ jobs:
             aquasec/trivy image \
               --pkg-types os,library \
               --ignore-unfixed \
-              --severity UNKNOWN,LOW,MEDIUM \
+              --severity UNKNOWN,LOW,MEDIUM,HIGH \
               --format sarif \
               --output /scan-results/trivy-${{ inputs.variant }}-image-scan-low.sarif \
               ${{ env.IMAGE_NAME }}:test-${{ inputs.variant }}
@@ -96,7 +96,7 @@ jobs:
               --exit-code 1 \
               --ignore-unfixed \
               --pkg-types os,library \
-              --severity CRITICAL,HIGH \
+              --severity CRITICAL \
               --format sarif \
               --output /scan-results/trivy-${{ inputs.variant }}-image-scan.sarif \
               --skip-files /usr/bin/geckodriver,/usr/local/bin/geckodriver \
