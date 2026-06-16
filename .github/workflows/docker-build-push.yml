@@ -19,7 +19,7 @@ on:
         type: string
 
 env:
-  IMAGE_NAME: "simaofsilva/noip-renewer"
+  IMAGE_NAME: "kaver79/noip-renewer"
 
 jobs:
   build-and-push:
